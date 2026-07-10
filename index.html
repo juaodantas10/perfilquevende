@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil Que Vende | Semana do Perfil Lucrativo</title>
+<meta name="description" content="O método prático pra transformar seu perfil do Instagram em uma máquina de vendas, mesmo com poucos seguidores.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --preto:#0a0a0a;
+    --carvao:#141311;
+    --dourado:#c9a961;
+    --creme:#f5f0e6;
+    --cinza:#b5aea0;
+    --display:'Bricolage Grotesque',sans-serif;
+    --texto:'Instrument Sans',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+  body{background:var(--preto);color:var(--creme);font-family:var(--texto);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px}
+  h1,h2{font-family:var(--display);font-weight:800;line-height:1.05;letter-spacing:-.01em}
+  h1{font-size:clamp(2.3rem,8vw,3.6rem)}
+  h2{font-size:clamp(1.7rem,6vw,2.4rem);margin-bottom:20px}
+  .ouro{color:var(--dourado)}
+  .cinza{color:var(--cinza)}
+  section{padding:64px 0}
+
+  /* barra topo */
+  .barra{background:var(--dourado);color:var(--preto);text-align:center;padding:10px 16px;font-weight:600;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;position:sticky;top:0;z-index:10}
+
+  /* hero */
+  .hero{padding:72px 0 56px;text-align:left;border-bottom:1px solid #262319}
+  .kicker{display:inline-block;color:var(--dourado);letter-spacing:.28em;font-size:.8rem;font-weight:600;text-transform:uppercase;margin-bottom:22px}
+  .hero p.sub{margin:24px 0 34px;color:var(--cinza);font-size:1.1rem;max-width:34em}
+
+  /* cta */
+  .cta{display:block;width:100%;max-width:440px;background:var(--dourado);color:var(--preto);text-align:center;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.25rem;padding:20px 28px;border:none;letter-spacing:.02em}
+  .cta:hover{filter:brightness(1.08)}
+  .cta:focus-visible{outline:3px solid var(--creme);outline-offset:3px}
+  .cta small{display:block;font-family:var(--texto);font-weight:500;font-size:.8rem;letter-spacing:.05em;margin-top:4px}
+  .selo{margin-top:14px;font-size:.85rem;color:var(--cinza)}
+
+  /* perfil motif */
+  .perfil-motivo{display:flex;align-items:center;gap:18px;margin:0 0 34px}
+  .avatar{width:64px;height:64px;border:2px solid var(--dourado);border-radius:50%;flex-shrink:0;position:relative}
+  .avatar::after{content:"";position:absolute;inset:-7px;border:1px solid rgba(201,169,97,.4);border-radius:50%}
+  .linhas span{display:block;height:9px;border-radius:5px;background:#3a352b;margin:7px 0}
+  .linhas span:first-child{background:var(--dourado);width:150px}
+  .linhas span:nth-child(2){width:210px}
+  .linhas span:nth-child(3){width:170px}
+
+  /* listas */
+  ul.check{list-style:none}
+  ul.check li{padding:14px 0 14px 38px;position:relative;border-bottom:1px solid #201d16}
+  ul.check li::before{content:"";position:absolute;left:0;top:22px;width:18px;height:10px;border-left:3px solid var(--dourado);border-bottom:3px solid var(--dourado);transform:rotate(-45deg)}
+  ul.x li::before{border:none;content:"\00d7";font-size:1.6rem;line-height:1;top:12px;color:#6b6459}
+
+  /* pilares */
+  .pilar{border:1px solid #262319;background:var(--carvao);padding:26px;margin-bottom:16px}
+  .pilar h3{font-family:var(--display);font-weight:800;font-size:1.15rem;margin-bottom:8px}
+  .pilar .tag{color:var(--dourado);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:10px}
+  .pilar p{color:var(--cinza);font-size:.98rem}
+
+  /* oferta */
+  .oferta{border:2px solid var(--dourado);padding:40px 28px;text-align:center;background:var(--carvao)}
+  .oferta .de{color:var(--cinza);font-size:1.1rem}
+  .oferta .de s{color:#6b6459}
+  .oferta .por{font-family:var(--display);font-weight:800;font-size:clamp(3rem,12vw,4.5rem);color:var(--dourado);line-height:1;margin:10px 0 4px}
+  .oferta .pgto{color:var(--cinza);font-size:.9rem;margin-bottom:28px}
+  .oferta .cta{margin:0 auto}
+  .contagem{margin-top:22px;font-size:.9rem;color:var(--cinza)}
+  .contagem b{color:var(--creme);font-variant-numeric:tabular-nums}
+
+  /* faq */
+  details{border-bottom:1px solid #262319;padding:18px 0}
+  summary{cursor:pointer;font-weight:600;list-style:none;position:relative;padding-right:30px}
+  summary::after{content:"+";position:absolute;right:0;top:0;color:var(--dourado);font-size:1.4rem;line-height:1}
+  details[open] summary::after{content:"\2013"}
+  details p{margin-top:12px;color:var(--cinza);font-size:.98rem}
+
+  footer{padding:48px 0 64px;border-top:1px solid #262319;font-size:.78rem;color:#6b6459;line-height:1.7}
+  footer p{margin-bottom:12px}
+</style>
+</head>
+<body>
+
+<div class="barra">Semana do Perfil Lucrativo &bull; de R$47 por R$19,90</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Ningu&eacute;m te conta isso</span>
+    <h1>Seu perfil n&atilde;o vende. <span class="ouro">E a culpa n&atilde;o &eacute; do algoritmo.</span></h1>
+    <p class="sub">Quando algu&eacute;m clica no seu @, ela decide em segundos se compra, se segue ou se vai embora. O Perfil Que Vende &eacute; o m&eacute;todo pra vencer esse teste todos os dias, mesmo com poucos seguidores.</p>
+    <a class="cta" href="https://pay.hotmart.com/J106675302E?off=lydneu8e&checkoutMode=10">QUERO MEU PERFIL VENDENDO<small>acesso imediato por R$19,90</small></a>
+    <p class="selo">Pagamento seguro pelo Hotmart &bull; Pix ou cart&atilde;o &bull; Garantia de 7 dias</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="perfil-motivo" aria-hidden="true">
+      <div class="avatar"></div>
+      <div class="linhas"><span></span><span></span><span></span></div>
+    </div>
+    <h2>O teste dos 5 segundos</h2>
+    <p class="cinza">Voc&ecirc; posta, aparece, at&eacute; recebe visita no perfil. E a&iacute; nada acontece. N&atilde;o &eacute; falta de conte&uacute;do e n&atilde;o &eacute; falta de seguidor. &Eacute; que o visitante chega, olha sua bio, seus destaques, seus fixados, e n&atilde;o entende em 5 segundos o que voc&ecirc; vende nem por que confiar em voc&ecirc;. Ent&atilde;o ele vai embora. O m&eacute;todo existe pra consertar exatamente esse buraco.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>O que voc&ecirc; vai montar com o m&eacute;todo</h2>
+    <div class="pilar"><span class="tag">Parte 01</span><h3>Bio que posiciona</h3><p>Quem voc&ecirc; ajuda, o que voc&ecirc; entrega e pra onde a pessoa vai. Sem frase de efeito vazia.</p></div>
+    <div class="pilar"><span class="tag">Parte 02</span><h3>Destaques e fixados que provam</h3><p>A vitrine que responde as obje&ccedil;&otilde;es do visitante antes de ele perguntar.</p></div>
+    <div class="pilar"><span class="tag">Parte 03</span><h3>Posicionamento que diferencia</h3><p>Como parecer especialista de verdade num feed cheio de gente prometendo milagre.</p></div>
+    <div class="pilar"><span class="tag">Parte 04</span><h3>Estrutura que conduz &agrave; venda</h3><p>O caminho do visitante frio at&eacute; o bot&atilde;o de compra, funcionando no autom&aacute;tico.</p></div>
+    <div class="pilar" style="border-color:var(--dourado)"><span class="tag">Incluso &bull; 4 b&ocirc;nus</span><h3>B&ocirc;nus da semana</h3>
+      <ul class="check" style="margin-top:6px">
+        <li><b>50 Bios Prontas</b> pra adaptar e usar no seu nicho hoje</li>
+        <li><b>30 Hooks Que Param o Scroll</b> pra abrir seus conte&uacute;dos</li>
+        <li><b>Scripts de DM Que Vendem</b> sem parecer vendedor chato</li>
+        <li><b>O Plano</b>, o passo a passo de execu&ccedil;&atilde;o em ordem</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Esse m&eacute;todo &eacute; pra voc&ecirc;?</h2>
+    <ul class="check">
+      <li>Voc&ecirc; vende (ou quer vender) produto ou servi&ccedil;o pelo Instagram</li>
+      <li>Voc&ecirc; tem perfil pequeno e cansou de ouvir que precisa de 10k primeiro</li>
+      <li>Voc&ecirc; prefere estrutura e m&eacute;todo a dancinha e promessa m&aacute;gica</li>
+    </ul>
+    <p style="margin:28px 0 10px;font-weight:600">E sendo honesto, n&atilde;o &eacute; pra voc&ecirc; se:</p>
+    <ul class="check x">
+      <li>Voc&ecirc; procura f&oacute;rmula de enriquecimento r&aacute;pido</li>
+      <li>Voc&ecirc; n&atilde;o pretende aplicar nada do que ler</li>
+    </ul>
+  </div>
+</section>
+
+<section id="oferta" style="padding-top:0">
+  <div class="wrap">
+    <div class="oferta">
+      <p class="de">Pre&ccedil;o normal: <s>R$ 47</s> &bull; essa semana:</p>
+      <p class="por">R$ 19,90</p>
+      <p class="pgto">pagamento &uacute;nico &bull; Pix ou cart&atilde;o &bull; acesso imediato e vital&iacute;cio</p>
+      <a class="cta" href="https://pay.hotmart.com/J106675302E?off=lydneu8e&checkoutMode=10">GARANTIR POR R$19,90<small>voc&ecirc; recebe o acesso no seu email em minutos</small></a>
+      <p class="contagem">A oferta termina em <b id="cronometro">&mdash;</b></p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Perguntas diretas, respostas diretas</h2>
+    <details><summary>Funciona com pouco seguidor?</summary><p>&Eacute; pra isso que ele existe. O m&eacute;todo trabalha o que o visitante encontra no seu perfil, e isso independe do tamanho da sua audi&ecirc;ncia.</p></details>
+    <details><summary>Como eu recebo o material?</summary><p>Acesso digital imediato pelo Hotmart, direto no seu email, pra ler no celular ou computador.</p></details>
+    <details><summary>E se eu n&atilde;o gostar?</summary><p>Garantia incondicional de 7 dias pelo Hotmart. Pediu reembolso, recebeu. Sem formul&aacute;rio escondido, sem m&aacute;goa.</p></details>
+    <details><summary>&Eacute; mais um curso de guru?</summary><p>N&atilde;o. &Eacute; um material direto ao ponto, sem promessa de riqueza, escrito por quem vende todos os dias com um perfil pequeno. Voc&ecirc; aplica no mesmo dia.</p></details>
+    <a class="cta" style="margin-top:36px" href="https://pay.hotmart.com/J106675302E?off=lydneu8e&checkoutMode=10">QUERO O PERFIL QUE VENDE<small>de R$47 por R$19,90 s&oacute; essa semana</small></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Ju&atilde;o Dantas &bull; Perfil Que Vende &bull; Todos os direitos reservados.</p>
+    <p>Este site n&atilde;o faz parte do site do Facebook ou Facebook Inc. Adicionalmente, este site n&atilde;o &eacute; endossado pelo Facebook de nenhuma forma. FACEBOOK &eacute; uma marca independente da META, Inc. Este produto n&atilde;o garante a obten&ccedil;&atilde;o de resultados. Qualquer refer&ecirc;ncia ao desempenho de uma estrat&eacute;gia n&atilde;o deve ser interpretada como uma garantia de resultados.</p>
+    <p>Pagamentos processados pelo Hotmart. D&uacute;vidas e suporte: joaodantashp@gmail.com.</p>
+  </div>
+</footer>
+
+<script>
+  // Fim da oferta: segunda 13/07/2026 as 23h59 (mesma data do contador do checkout)
+  var DATA_FIM = new Date("2026-07-13T23:59:00-03:00");
+  var el = document.getElementById("cronometro");
+  function tique(){
+    var d = DATA_FIM - new Date();
+    if(d <= 0){ el.textContent = "encerrada"; return; }
+    var h = Math.floor(d/36e5), m = Math.floor(d%36e5/6e4), s = Math.floor(d%6e4/1e3);
+    el.textContent = (h<10?"0":"")+h+"h "+(m<10?"0":"")+m+"m "+(s<10?"0":"")+s+"s";
+    setTimeout(tique, 1000);
+  }
+  tique();
+</script>
+
+</body>
+</html>
